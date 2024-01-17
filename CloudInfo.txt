@@ -124,3 +124,23 @@ first change following folder
 now create index.html page in that folder then write code as per the required
 	sudo vi  index.html
 once it is saved the refresh browser.
+
+-------------
+Modify
+-------------
+to install local server/ web server
+	sudo yum install httpd   
+to enable web server(by default disable)
+	sudo systemctl enable --now httpd
+to check status of the server 
+	sudo systemctl status httpd
+
+Once server is installed and enabled, open browser then type public IP of the ec2
+it will shows default web page.
+
+To load some other page in location
+first change following folder
+	cd /var/www/html/
+now create index.html page in that folder then write code as per the required
+	sudo vi  index.html
+once it is saved the refresh browser.
