@@ -1,0 +1,236 @@
+Today's Agenda
+---------------
+Agile
+---------------
+Why should we learn a programming language?
+		To Develop the softwares
+
+What is a meant by project?
+		A project nothing but a software. 
+		or
+		It is an application/tool for an entity or org. 
+----------------
+
+Steps to develop a project
+
+What is ur project?
+	Concept has to explained
+
+	Existing System and it's limitaions
+			Current process of the org
+				and it's limitations
+	Proposed System and it's features
+			What is ur expectations and features
+
+Modules of the project
+	An entire project will be divided into some parts. Each part is called as a module. 
+
+	Ex:- 
+		School Management System
+			Students Module
+			Employees Module
+			Library Module
+
+				Tasks will be identified for every module
+
+System Design
+	Here we have to prepare a document for complete project analysis. 
+			a.  input's of the project
+			b.  output's of the project
+			c.  these input's/output's will be represented in the form of diagrams.
+					UML(Unified Modelling Language) Diagrams
+			d.  Database Tables where data has to be stored.
+
+Hardware and Software Requirements
+
+	Software Requirements
+			OS		:-   Windows/Linux/...
+			Prog Lang	:-   Java/Dotnet/Python/....
+			Database	:-   MySQL/SQL Server/Oracle/....
+
+	Hardware  Requirements
+			Processor
+			Disk
+			Memory
+
+Coding
+	Development will be started
+
+Testing
+	Once Development completed, that has to be tested. 
+
+Deployment 
+	Implementing a software in client location.
+-----------------------------------
+Software Development Life Cycle(SDLC)
+	The purpose of the SDLC is to generate a large system that satisifies customer expectations, 
+	performs effectively and efficiently in current and projected information technology and is 		maintainance economically and should provide to enhance. 
+
+Here SDLC provides collection of methodologies/Models, with the help of these, application development process will be followed in a software companies. 
+
+
+For any application development there some steps as follows
+
+1.  Planning
+	The first is duration of the developmet project included. 
+	The Second is  design, development, deployment, production, launch .... 
+2.  Defining
+	It Defines the logical framework of each module as well as interface used to connect with it.
+
+3.  Designing
+	Depends on the requirement, input's and output's and diagram's of the project will be prepared
+	finalizing the hardware and software requirements
+4.  Building
+	Coding
+5.  Testing
+	Test the application
+6.  Deployment
+	Implementation
+
+
+SDLC Models
+	Waterfall Model
+	V Model
+	Incremental Model
+	RAD Model
+	Iterative Model
+	Spiral Model
+	Agile Model
+--------------------
+Waterfall Model:-
+
+	The waterfall model is a cascade  SDLC Model tht includes gradual execution of phases.
+	This model is a breakdown of the project activeties into linear sequential phases. 
+	Each Phase depends on the deliverables of the previous phase. 
+
+	In general way, it can be call it as TOP - BOTTOM APPROACH. 
+V Model
+
+This model is an expansion of Classic Waterfall Model.
+This mdoel is associated with Teting Stage  of every development stage. 
+It is a very strict model and the next stage is started only after the previous phase is done. 
+
+Incremental Model :- 
+
+This model is a process of distributes requirements into multiple stand-alone modules during the developemnt. 
+
+For every module all the steps has to be repeated. 
+ 
+RAD Model :-  RAD : Rapid Application Development
+		
+		Adoptive Software Development is also called RAD. 
+
+		It is a concept that states that by gathering  needs through workshops or other resources and developing a proto type then that will be demonstrated to the relavent clients. 
+if any clients accepts, that will be enhanced and given to that client.
+
+
+Iterative Model
+
+this model is occured whenever want't review the entire project and allows to perform some modifications. 
+
+Before deploying, it will work, i.e. from Testing phase to Requirement Analysis Phase. 
+
+Spiral Model
+
+	It is an hybrid of the iterative and WaterFall model with strong focus on risk assessment. 
+---------------------------------
+Agile Model:- 
+
+	It is a process that allows a team more  efficiently manages a project by breaking it down into several stages. Each of which allows for consistant , colabartion with clients to promoto improvements in every stage. 
+
+there are 12 rules in Agile
+
+1.  Customer Satisfaction
+2.  Early and contionus delivery
+3.  Frequent Delivery
+4.  Collaboration of businesses and developers
+5.  Motivated indivisuals
+6.  Face-to-Face conversation
+7.  Functional Products
+8.  Technical Excellence
+9.  Simplicity
+10. Self-Organised Teams
+11. Regulation, reflection and adjustments
+12. Embrace change
+
+Agile Methodology:-
+
+It is a type of project management process, mainly used for softwre development, where demands and solutions evolve trough collaborative team.
+
+Scrum:-
+
+It is a subset of Agile. It is a lightweight process of framework for agile and most widely used one. 
+
+Scrum :-  A process/It is a method of agile.
+
+Life cycle of Scrum:- 
+
+Sprint
+Release
+Sprint Review
+Sprint Restrospective
+Product Backlogs
+Sprint Backlogs
+
+Ex:-		
+School Management System
+	Students Module
+		a.  New Student Adding/Modify/Delete/Search
+		b.  Adding Marks of exams
+		c.  Adding Fees particulars
+		d.  Preparing Marksheets
+		e.  Adding Attendance Details
+	Employees Module
+		a.  Add new Employee Details and  Modify
+		b.  Add Job Details and Salary Details
+	Library Module
+		a.  Add/Modify/Delete/Search Books
+		b.  Issued Books Details
+		c.  Members of Library Details
+
+Product Backlog:- 
+	According to the project, whatever tasks are identified, those all tasks called as product backlog.
+
+Sprint
+	It is a duration of one month or less. A new sprint starts once existing sprint is completed.
+		usually a sprint having 2 weeks of time. Sprint always having short term goal. 
+
+Sprint  Backlog :- 
+	It is a process of how many backlogs are developing in a sprint. 
+
+Release :-  It is a time to complete a sprint/a product.
+
+Sprint Review :- 
+It the product still have some pending backlogs, then it will be checked. 
+
+Sprint Restrospective
+	in this stage  quality or statuss of the product/spring is checked.
+----------------------
+3 sprints are exist
+
+Sprint - 1:- what are the releases
+ 		a.  New Student Adding/Modify/Delete/Search
+		b.  Adding Marks of exams
+		c.  Adding Fees particulars
+	
+Sprint - 2:- what are the releases
+		d.  Preparing Marksheets
+		e.  Adding Attendance Details	
+		a.  Add new Employee Details and  Modify
+Sprint - 3:- what are the releases
+		b.  Add Job Details and Salary Details
+		a.  Add/Modify/Delete/Search Books
+		b.  Issued Books Details
+		c.  Members of Library Details  
+-----------------------
+Scrum Master
+	The person is reponsiable for making sure the team as prdocutive as possiable. He is also responsiable for conducting meetings/getting the status of the Sprint/helping to team members if they are facing any issues. 
+
+Role of Test Engineer in Scrum Team
+
+1.  Attend sprint planning meetings
+2.  Attend daily stand-ups
+3.  Meet with developers for short-hand-off demonstrations
+4.  Once testing is completed, Test Report has to send to development team.
+-------------
+Working with Agile Process is "JIRA" Tool. 
