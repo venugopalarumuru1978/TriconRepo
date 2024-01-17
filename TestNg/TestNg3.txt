@@ -1,0 +1,97 @@
+Today's Agenda
+--------------
+1. Priority
+2. Groups
+3. Parellel Test Execution
+4. Data Providers with Excel Integration
+--------------
+Priorities of the test cases
+
+Priority means in testng is, Order of executing test case methods. 
+
+As per TestNG, every test case method executes based on MethodName in asending order by default.
+But as per the user required, if any specific order is needed, there are two ways
+
+1. Specifing list of methods in XML Config file. 
+2. Specifing priority for every test method while defining with "priority" option in Test Annotation
+		@Test(priority=number)
+	here numbers are starts from 0, 1, .....
+
+Test any  ticket booking application:-
+
+1. SignUp
+2. Login
+3. Search the Tickets
+4. Book/Buy the Tickets
+5. Download the Tickets
+6. Logout
+-----------------------------------------------------
+Groups :- 
+
+A group is a process of categorizing some collection of test cases. 
+
+As per the TestNG, TestCases are divided into groups, for every group there is a name. 
+
+Different types of Testing
+
+1.  Smoke  
+2.  Functional
+3.  Regression
+4.  Sanity
+5.  Daily/Weekly/... Tests
+6.  Platform(based on OS)=>Windows/Linux/...
+
+if you feel that we writing testing for these all type of testings, these methods must be divided into groups. 
+
+Steps :- 
+
+1.  define group with every test case method by using @Test Annotation.
+	@Test(groups={"groupname", "groupname", ....})
+2.  Group are executed with xml file, there are group are executed in two levels
+		a. Test Level   :-  here groups are executed based on that particular test only.
+		b. Suite Level  :-  here groups are executed in all tests of xml file.
+
+	Configure groups in xml as follows
+
+		<groups>
+			<run>
+				<include name="name of group" />
+			</run>
+		</groups>
+
+Note :-  If needed TestNG allows to define subgroups also. 
+		groupname.subgroupname
+		groupname.*  = called as regular expression(* = means all the subgroups)
+
+Groups of Group(Meta Groups) :- defining set/collection of groups in one place within the xml file
+			and execute that meta group. 
+
+		<define name="meta group name">
+			<include name="group name" />
+			.....
+		</define>
+		<run>
+			<include name="meta group name" />
+		</run>
+-------------------------------
+Excel Integration with Data Provider:- 
+
+Steps :-  
+1. Create an excel file with some data and save it. 
+2. Add that excel file to the Application(keep that file in src/test/resource folder)
+3. Download and add following dependencies
+		name :  apache.poi
+
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.1.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.1.0</version>
+</dependency>
+4.  Create a class and method then write needed code

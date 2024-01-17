@@ -4,6 +4,7 @@ Today's Agenda:-
 2.  Deploying Web Application in Tomcat Server
 3.  Creating Server for MySQL
 4.  Connecting to MySQL
+5.  Creating Server for Jenkins
 ----------------------
 Steps to create tomcat web server:-
 

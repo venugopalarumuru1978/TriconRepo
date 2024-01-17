@@ -1,0 +1,79 @@
+Today's Agenda
+---------------
+1. Parameters in TestNG
+2. Data Providers in TestNG
+3. Generating Reports
+---------------
+Parameters in TestNG:- 
+
+Parameters values which can be sent to the method at the time of calling. 
+As per the TestNG, we can pass parameters to the Test Case methods also. 
+To do this process:- 
+
+Steps:- 
+1.  Parameters are defined in testng xml file with specific values
+	As per the testng  parameters are classified into two types
+			1. Suite Level Parameters
+				This type of parameters are defined in <Suite> tag and used in all the
+				test cases.
+			2. Test Level Parameters
+				This type of parameters are defined in <Test> tag and used only for 
+				that test case.
+
+		To define paramters use following syntax
+			<parameter  name="variablename"  value="value of the parameter" />
+2.  Parameters are implemented for every test methods with following annotations
+		@Parameters("variablename")
+3.  here if parameterss are using then that test method must have Arguments.
+		public void methodname([arg])
+		{
+			......
+		}
+-------------------------------------------
+Data Providers :- 
+What are DataProviders in TestNG? The DataProviders in TestNG are another way to pass the parameters in the test function, the other one being TestNG parameters. DataProviders pass different values to the TestNG Test Case in a single execution and in the form of TestNG Annotations.
+
+Steps :- 
+1.  Create a method with Object[][] return type which holds set of values 
+		in the form of double dimensional array of Object Data Type. 
+2.  Method must be precded with @DataProvider  annotation
+
+	@DataProvider
+	public Object[][] MethodName()
+	{
+		code 
+	return <object/variable>;
+	}
+3.  To Implement/Access Data provider values, @Test annotation has to be specify as follows in test 		case method
+
+		@Test(dataProvider="methodname of data provider")
+		public void testcasemethod([arg])
+		{
+			.......
+		}
+---------------------------
+Reports :- 
+
+How to generate Html Based Reports?
+
+whenever we generating report, it should consist following information
+
+1.  Passed TestCase Info
+2.  Faild TestCase Info
+3.  ScreenShots of the failed testcases
+4.  Browser Info
+5.  Author(who has tested)
+6.  System Info
+7.  Tested Date Time
+
+Steps:-
+
+Add following dependency for report generation
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+
+ITestContext :- this interface is used to get information from the testng xml file based test is running.
